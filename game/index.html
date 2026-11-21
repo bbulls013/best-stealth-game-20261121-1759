@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Silent Ledger — a top-down stealth game</title>
+<link rel="icon" href="data:,">
+<style>
+  html, body { margin: 0; padding: 0; background: #0b0e14; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; font-family: monospace; }
+  #wrap { text-align: center; }
+  canvas { background: #101623; border: 2px solid #2b3a55; border-radius: 6px; max-width: 96vw; height: auto; }
+  #hint { color: #7d8aa5; font-size: 12px; margin-top: 8px; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="cv" width="960" height="600"></canvas>
+  <div id="hint">WASD / arrows move · Shift run · C or Ctrl crouch · click: throw pebble · P pause · R restart</div>
+</div>
+<noscript><p style="color:#d7deee">Silent Ledger needs JavaScript enabled.</p></noscript>
+<script src="src/gfx.js"></script>
+<script src="src/levels.js"></script>
+<script src="src/game.js"></script>
+</body>
+</html>
